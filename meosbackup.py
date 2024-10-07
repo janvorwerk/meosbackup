@@ -77,7 +77,7 @@ class MeosServer:
     def disconnect(self):
         '''Closes the DB connection'''
         self._conn.close()
-        LOGGER.info('Disonnected from MeOS database, %s:%d', self._conn.server_host, self._conn.server_port)
+        LOGGER.info('Disconnected from MeOS database, %s:%d', self._conn.server_host, self._conn.server_port)
 
 
     def _select(self, *columns, from_table, where='', limit=1000):
